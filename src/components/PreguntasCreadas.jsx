@@ -5,6 +5,7 @@ import { useContext } from "react";
 
 const PreguntasCreadas = () => {
     const{preguntas} = useContext(PreguntasContext)
+    console.log(preguntas);
     return (
         <div className="d-flex flex-wrap justify-content-center mt-4">
             {

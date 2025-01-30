@@ -8,11 +8,11 @@ function FormPreguntas() {
 
     const [pregunta, setPregunta] = useState(
         {
-            enunciado: "Enunciado",
-            respuesta1: "Respuesta1",
-            respuesta2: "Respuesta2",
-            respuesta3: "Respuesta3",
-            respuesta4: "Respuesta4",
+            enunciado: "",
+            respuesta1: "",
+            respuesta2: "",
+            respuesta3: "",
+            respuesta4: "",
             respuestacorrecta: -1,
             favorita: false
         }
@@ -46,7 +46,7 @@ function FormPreguntas() {
             <form onSubmit={handleSumbit}>
                 <textarea
                     className="form-control mb-2"
-                    placeholder="enunciado pregunta"
+                    placeholder="Enunciado pregunta"
                     name="enunciado"
                     value={pregunta.enunciado}
                     onChange={handleChange}
@@ -61,7 +61,7 @@ function FormPreguntas() {
                     />
                     <input
                         type="text"
-                        placeholder="respuesta 1"
+                        placeholder="Respuesta 1"
                         className="form-control mb-2"
                         name="respuesta1"
                         htmlFor="inputCheck1"
@@ -79,7 +79,7 @@ function FormPreguntas() {
                     />
                     <input
                         type="text"
-                        placeholder="respuesta 2"
+                        placeholder="Respuesta 2"
                         className="form-control mb-2"
                         name="respuesta2"
                         htmlFor="inputCheck2"
@@ -97,7 +97,7 @@ function FormPreguntas() {
                     />
                     <input
                         type="text"
-                        placeholder="respuesta 3"
+                        placeholder="Respuesta 3"
                         className="form-control mb-3"
                         name="respuesta3"
                         htmlFor="inputCheck3"
@@ -115,7 +115,7 @@ function FormPreguntas() {
                     />
                     <input
                         type="text"
-                        placeholder="respuesta 4"
+                        placeholder="Respuesta 4"
                         className="form-control mb-2"
                         name="respuesta4"
                         htmlFor="inputCheck4"
